@@ -31,10 +31,10 @@ PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusGallery \
     OnePlusCameraService \
-    seccamservice \
     Email
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/addon.d/51-oneplus-camera.sh:system/addon.d/51-oneplus-camera.sh  \
     $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml
 
 # Device uses high-density artwork where available
